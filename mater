@@ -1,0 +1,18 @@
+#!/bin/bash
+
+############################################################################ 
+# Script to open a directory in TextMate excluding certain directories that
+# tend to slow down the Find in Project... function.
+#
+# Place in an executable loctation with a name of your choosing.
+# I use `ate' and have it in ~/Local/bin (which has been added to $PATH)
+############################################################################
+
+# Enable extended globbing
+shopt -s extglob
+
+# Invoke TextMate upon all the files and directories except those listed
+mate !(@(cache|doc|log|tmp|vendor))
+
+# Disable extended globbing
+shopt -u extglob
