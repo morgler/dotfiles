@@ -45,7 +45,7 @@ function gmback {
   gm $branch
 }
 #export PS1='\u@\h:\[\033[1;33m\]\W\[\033[0m\]$(parse_git_branch)$ '
-export PS1="\n\u:\w \[$bldylw\]\$(parse_git_branch) \[$txtrst\] \n→ "
+export PS1="\n\u@\h:\w \[$bldylw\]\$(parse_git_branch) \[$txtrst\] \n\[$txtcyn\]→\[$txtrst\] "
 
 
 _complete_git() {
