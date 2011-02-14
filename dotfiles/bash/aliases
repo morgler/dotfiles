@@ -9,6 +9,7 @@ alias g='git status'
 alias gb='git branch'
 alias gco='git checkout '
 alias gub='git fetch origin master && git rebase origin/master'   # update branch
+alias gf='git flow '
 alias feature='rake db:test:prepare && cucumber --drb '
 alias migrate='rake db:migrate && rake db:test:prepare'
 alias watch='watchr ./watchr-runner.rb'
