@@ -10,7 +10,8 @@ alias gb='git branch'
 alias gco='git checkout '
 alias gub='git fetch origin master && git rebase origin/master'   # update branch
 alias gf='git flow '
-alias gp='git push '
+alias gll='git pull '
+alias gsh='git push '
 alias feature='rake db:test:prepare && cucumber --drb '
 alias migrate='rake db:migrate && rake db:test:prepare'
 alias watch='watchr ./watchr-runner.rb'
@@ -20,6 +21,7 @@ alias gffs='git flow feature start '
 alias gfff='git flow feature finish '
 alias gfhs='git flow hotfix start '
 alias gfhf='git flow hotfix finish '
+alias livesein='cd ~/code/livesein'
 
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
