@@ -23,6 +23,7 @@ alias gfhs='git flow hotfix start '
 alias gfhf='git flow hotfix finish '
 alias livesein='cd ~/code/livesein'
 alias isomatte='ssh matthias@isomatte.dreimannzelt.de'
+alias rmorig="find . -name '*.orig' | xargs rm"
 
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
