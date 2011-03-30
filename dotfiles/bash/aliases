@@ -22,6 +22,7 @@ alias gfff='git flow feature finish '
 alias gfhs='git flow hotfix start '
 alias gfhf='git flow hotfix finish '
 alias livesein='cd ~/code/livesein'
+alias uin='cd ~/code/dreimannzelt/uin'
 alias isomatte='ssh matthias@isomatte.dreimannzelt.de'
 alias rmorig="find . -name '*.orig' | xargs rm"
 
