@@ -7,3 +7,4 @@ export PATH=/usr/local/bin:$PATH:~/bin:/usr/local/sbin
 export AUTOFEATURE=true
 export AUTOSPEC=true
 export EDITOR="mate -w"
+export RAILS_ENV='development'

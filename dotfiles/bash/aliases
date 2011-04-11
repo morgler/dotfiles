@@ -21,7 +21,8 @@ alias gffs='git flow feature start '
 alias gfff='git flow feature finish '
 alias gfhs='git flow hotfix start '
 alias gfhf='git flow hotfix finish '
-alias livesein='cd ~/code/livesein'
+alias livesein-old='cd ~/code/livesein'
+alias livesein='cd ~/code/livesein-ng'
 alias uin='cd ~/code/dreimannzelt/uin'
 alias isomatte='ssh matthias@isomatte.dreimannzelt.de'
 alias rmorig="find . -name '*.orig' | xargs rm"
@@ -29,6 +30,8 @@ alias mongo_start='mongod run --config /usr/local/Cellar/mongodb/1.8.0-x86_64/mo
 alias bpstop='sudo bluepill stop'
 alias bpload='sudo bluepill load config/bluepill/development.pill'
 alias bpstatus='sudo bluepill status'
+alias lsstart='mongo_start; bpload; redis-server'
+alias lsstop='bpstop; killall redis-server; killall mongod'
 
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
