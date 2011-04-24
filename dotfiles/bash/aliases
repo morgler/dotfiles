@@ -26,12 +26,18 @@ alias livesein='cd ~/code/livesein-ng'
 alias uin='cd ~/code/dreimannzelt/uin'
 alias isomatte='ssh matthias@isomatte.dreimannzelt.de'
 alias rmorig="find . -name '*.orig' | xargs rm"
-alias mongo_start='mongod run --config /usr/local/Cellar/mongodb/1.8.0-x86_64/mongod.conf --fork --logpath /tmp/mongodb.log'
-alias bpstop='sudo bluepill stop'
+alias mongo_start='mongod run --config /usr/local/Cellar/mongodb/1.8.1-x86_64/mongod.conf --fork --logpath /tmp/mongodb.log'
+alias mongo_repair='mongod run --repair --config /usr/local/Cellar/mongodb/1.8.1-x86_64/mongod.conf --logpath /tmp/mongodb.log'
+alias bpstop='sudo bluepill stop; sudo bluepill quit'
 alias bpload='sudo bluepill load config/bluepill/development.pill'
 alias bpstatus='sudo bluepill status'
-alias lsstart='mongo_start; bpload; redis-server'
-alias lsstop='bpstop; killall redis-server; killall mongod'
+alias k9bpill='ps aux | grep bluepilld | grep -v grep | awk "{ print \$2 }" | xargs sudo kill -9'
+alias lsstart='mongo_start; bpload; redis-server; /opt/nginx/sbin/nginx'
+alias lsstop='bpstop; killall redis-server; killall mongod; killall nginx'
+alias tts='touch tmp/specs'
+alias ttf='touch tmp/features'
+alias tta='touch tmp/specs_features'
+alias begs='RAILS_ENV=test bundle exec guard start'
 
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
