@@ -44,12 +44,13 @@ alias sbqj='sudo bluepill ls_juggernaut stop'
 alias sbq='sbqj; sbqd; sbqt'
 alias k9bpill='ps aux | grep bluepilld | grep -v grep | awk "{ print \$2 }" | xargs sudo kill -9'
 
-alias lsstart='mongo_start; sbl; /opt/nginx/sbin/nginx; redis-server &'
-alias lsstop='sbq; killall redis-server; killall mongod; killall nginx'
+alias lsstart='mongo_start; redis-server &; sbl; /opt/nginx/sbin/nginx'
+alias lsstop='killall nginx; sbq; killall redis-server; killall mongod'
 
 alias tts='touch tmp/specs'
 alias ttf='touch tmp/features'
 alias tta='touch tmp/specs_features'
+alias ttr='touch tmp/restart.txt'
 alias begs='RAILS_ENV=test bundle exec guard start'
 
 # RVM
