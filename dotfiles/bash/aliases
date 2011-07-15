@@ -27,7 +27,7 @@ alias uin='cd ~/code/dreimannzelt/uin'
 alias isomatte='ssh matthias@isomatte.dreimannzelt.de'
 alias rmorig="find . -name '*.orig' | xargs rm"
 
-alias mongo_start='mongod run --config /usr/local/Cellar/mongodb/1.8.1-x86_64/mongod.conf --fork --logpath /tmp/mongodb.log'
+alias mongo_start='mongod run --config /usr/local/Cellar/mongodb/1.8.2-x86_64/mongod.conf --fork --logpath /tmp/mongodb.log'
 alias mongo_repair='mongod run --repair --config /usr/local/Cellar/mongodb/1.8.1-x86_64/mongod.conf --logpath /tmp/mongodb.log'
 
 alias sbld='sudo bluepill load config/bluepill/development.pill'
@@ -44,8 +44,8 @@ alias sbqj='sudo bluepill ls_juggernaut stop'
 alias sbq='sbqj; sbqd; sbqt'
 alias k9bpill='ps aux | grep bluepilld | grep -v grep | awk "{ print \$2 }" | xargs sudo kill -9'
 
-alias lsstart='mongo_start; redis-server &; sbl; /opt/nginx/sbin/nginx'
-alias lsstop='killall nginx; sbq; killall redis-server; killall mongod'
+alias lsstart='mongo_start; sbl; /opt/nginx/sbin/nginx; memcached -d'
+alias lsstop='killall memcached; killall nginx; sbq; killall mongod'
 
 alias tts='touch tmp/specs'
 alias ttf='touch tmp/features'
