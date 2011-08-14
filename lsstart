@@ -1,0 +1,26 @@
+#!/bin/bash
+
+export RAILS_ENV=development
+
+echo ":::redis:::"
+redis-server /usr/local/etc/redis.conf
+
+echo ":::elasticsearch:::"
+#elasticsearch -D es.config=/usr/local/Cellar/elasticsearch/0.17.4/config/elasticsearch.yml #> /dev/null 2>&1 &
+elasticsearch start
+
+echo ":::mongo:::"
+mongod run --config /usr/local/Cellar/mongodb/1.8.2-x86_64/mongod.conf --fork --logpath /tmp/mongodb.log
+
+echo ":::bluepill:::"
+sudo bluepill load config/bluepill/juggernaut.pill
+sudo bluepill load config/bluepill/development.pill
+sudo bluepill load config/bluepill/test.pill
+
+echo ":::nginx:::"
+/opt/nginx/sbin/nginx
+
+echo ":::memcached:::"
+memcached -d
+
+echo ":::FINISHED:::"
