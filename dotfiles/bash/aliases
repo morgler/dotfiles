@@ -23,6 +23,7 @@ alias gfhs='git flow hotfix start '
 alias gfhf='git flow hotfix finish '
 alias livesein-old='cd ~/code/livesein'
 alias livesein='cd ~/code/livesein-ng'
+alias livesein-ios='cd ~/code/livesein-ios/spikes/iphone'
 alias uin='cd ~/code/dreimannzelt/uin'
 alias isomatte='ssh matthias@isomatte.dreimannzelt.de'
 alias rmorig="find . -name '*.orig' | xargs rm"
@@ -56,6 +57,7 @@ alias ttf='touch tmp/features'
 alias tta='touch tmp/specs_features'
 alias ttr='touch tmp/restart.txt'
 alias begs='RAILS_ENV=test bundle exec guard start'
+alias be='bundle exec '
 
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
