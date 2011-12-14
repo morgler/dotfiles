@@ -2,7 +2,7 @@
 
 export RAILS_ENV=development
 
-echo ":::redis:::"
+#echo ":::redis:::"
 redis-server /usr/local/etc/redis.conf
 
 echo ":::elasticsearch:::"
