@@ -27,6 +27,7 @@ alias uin='cd ~/code/dreimannzelt/uin'
 alias isomatte='ssh matthias@isomatte.dreimannzelt.de'
 alias rmorig="find . -name '*.orig' | xargs rm"
 alias be="bundle exec "
+alias tomcat="/usr/local/Cellar/tomcat/7.0.21/bin/catalina "
 
 alias mongo_start='mongod run --config /usr/local/Cellar/mongodb/1.8.2-x86_64/mongod.conf --fork --logpath /tmp/mongodb.log'
 alias mongo_repair='mongod run --repair --config /usr/local/Cellar/mongodb/1.8.1-x86_64/mongod.conf --logpath /tmp/mongodb.log'
