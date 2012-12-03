@@ -31,6 +31,7 @@ alias livesein-ios='cd ~/code/livesein-ios/spikes/iphone'
 alias uin='cd ~/code/dreimannzelt/uin'
 alias isomatte='ssh matthias@isomatte.dreimannzelt.de'
 alias rmorig="find . -name '*.orig' | xargs rm"
+alias rmcassettes="rm spec/fixtures/cassettes/*.yml; rm spec/fixtures/cassettes/**/*.yml; rm features/fixtures/cassettes/cucumber_tags/*.yml"
 alias be="bundle exec "
 alias tomcat="/usr/local/Cellar/tomcat/7.0.21/bin/catalina "
 
@@ -75,3 +76,6 @@ alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 # Postgres
 alias pg_start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pg_stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+
+# Sublime
+alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
