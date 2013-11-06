@@ -19,11 +19,6 @@ alias migrate='rake db:migrate && rake db:test:prepare'
 alias watch='watchr ./watchr-runner.rb'
 alias ..="cd .."
 alias ea="mate ~/bin/dotfiles/bash/aliases && source ~/.bashrc"
-alias gffs='git flow feature start '
-alias gfff='git flow feature finish -k '
-alias gffk='git flow feature finish -k '
-alias gfhs='git flow hotfix start '
-alias gfhf='git flow hotfix finish '
 alias livesein-old='cd ~/code/livesein'
 alias livesein='cd ~/code/livesein-ios/spikes/iphone'
 alias livesein-rails='cd ~/code/livesein-ng'
@@ -34,6 +29,13 @@ alias rmorig="find . -name '*.orig' | xargs rm"
 alias rmcassettes="rm spec/fixtures/cassettes/*.yml; rm spec/fixtures/cassettes/**/*.yml; rm features/fixtures/cassettes/cucumber_tags/*.yml"
 alias be="bundle exec "
 alias tomcat="/usr/local/Cellar/tomcat/7.0.21/bin/catalina "
+
+# Gitflow
+alias gffs='git flow feature start '
+alias gfff='git flow feature finish '
+alias gffk='git flow feature finish -k '
+alias gfhs='git flow hotfix start '
+alias gfhf='git flow hotfix finish '
 
 alias mongo_start='mongod run --config /usr/local/Cellar/mongodb/1.8.2-x86_64/mongod.conf --fork --logpath /tmp/mongodb.log'
 alias mongo_repair='mongod run --repair --config /usr/local/Cellar/mongodb/1.8.1-x86_64/mongod.conf --logpath /tmp/mongodb.log'
