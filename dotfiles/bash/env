@@ -6,5 +6,5 @@ export PATH=/usr/local/bin:$PATH:~/bin:/usr/local/sbin
 # Autotest
 export AUTOFEATURE=true
 export AUTOSPEC=true
-export EDITOR="mate -w"
+export EDITOR="subl -w"
 #export RAILS_ENV='development'
