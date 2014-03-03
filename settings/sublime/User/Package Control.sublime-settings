@@ -1,0 +1,17 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"AutoFileName",
+		"CoffeeScript",
+		"Gist",
+		"GitGutter",
+		"Haml",
+		"Highlight",
+		"Origami",
+		"Package Control",
+		"Sass",
+		"Sublimerge Pro",
+		"Zen Tabs"
+	]
+}
