@@ -1,3 +1,9 @@
+function finish_feature() {
+  git checkout master
+  git pull origin master
+  git merge --no-ff $1  
+}
+
 alias sg='script/generate '
 alias ss='script/server'
 alias ll='ls -l'
@@ -24,7 +30,6 @@ alias livesein='cd ~/code/livesein-ios/spikes/iphone'
 alias livesein-rails='cd ~/code/livesein-ng'
 alias livesein-ios='cd ~/code/livesein-ios/spikes/iphone'
 alias uin='cd ~/code/dreimannzelt/uin'
-alias isomatte='ssh matthias@isomatte.dreimannzelt.de'
 alias rmorig="find . -name '*.orig' | xargs rm"
 alias rmcassettes="rm spec/fixtures/cassettes/*.yml; rm spec/fixtures/cassettes/**/*.yml; rm features/fixtures/cassettes/cucumber_tags/*.yml"
 alias be="bundle exec "
@@ -36,6 +41,10 @@ alias gfff='git flow feature finish '
 alias gffk='git flow feature finish -k '
 alias gfhs='git flow hotfix start '
 alias gfhf='git flow hotfix finish '
+
+# Personal Git Workflow
+alias sf='git checkout -b '
+alias ff=finish_feature
 
 alias mongo_start='mongod run --config /usr/local/Cellar/mongodb/1.8.2-x86_64/mongod.conf --fork --logpath /tmp/mongodb.log'
 alias mongo_repair='mongod run --repair --config /usr/local/Cellar/mongodb/1.8.1-x86_64/mongod.conf --logpath /tmp/mongodb.log'
