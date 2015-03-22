@@ -2,6 +2,7 @@ function finish_feature() {
   git checkout master
   git pull origin master
   git merge --no-ff $1  
+  git tag $1
 }
 
 alias sg='script/generate '
