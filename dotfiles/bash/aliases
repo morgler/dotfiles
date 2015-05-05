@@ -34,6 +34,7 @@ alias uin='cd ~/code/dreimannzelt/uin'
 alias rmorig="find . -name '*.orig' | xargs rm"
 alias rmcassettes="rm spec/fixtures/cassettes/*.yml; rm spec/fixtures/cassettes/**/*.yml; rm features/fixtures/cassettes/cucumber_tags/*.yml"
 alias be="bundle exec "
+alias tf="tail -f "
 
 # Gitflow
 alias gffs='git flow feature start '
