@@ -34,7 +34,6 @@ alias uin='cd ~/code/dreimannzelt/uin'
 alias rmorig="find . -name '*.orig' | xargs rm"
 alias rmcassettes="rm spec/fixtures/cassettes/*.yml; rm spec/fixtures/cassettes/**/*.yml; rm features/fixtures/cassettes/cucumber_tags/*.yml"
 alias be="bundle exec "
-alias tomcat="/usr/local/Cellar/tomcat/7.0.21/bin/catalina "
 
 # Gitflow
 alias gffs='git flow feature start '
