@@ -8,5 +8,5 @@ echo "RELEASING ${VERSION}"
 
 git checkout master
 git pull origin master
-git tag -a $VERSION
+git tag -a $VERSION -m "Release $VERSION"
 git push origin master --tags

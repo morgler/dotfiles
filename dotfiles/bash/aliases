@@ -2,7 +2,7 @@ function finish_feature() {
   git checkout master
   git pull origin master
   git merge --no-ff $1  
-  git tag $1
+  git commit
 }
 
 alias sg='script/generate '
@@ -47,23 +47,8 @@ alias gfhf='git flow hotfix finish '
 alias sf='git checkout -b '
 alias ff=finish_feature
 
-alias mongo_start='mongod run --config /usr/local/Cellar/mongodb/1.8.2-x86_64/mongod.conf --fork --logpath /tmp/mongodb.log'
-alias mongo_repair='mongod run --repair --config /usr/local/Cellar/mongodb/1.8.1-x86_64/mongod.conf --logpath /tmp/mongodb.log'
-alias restart_nginx='/opt/nginx/sbin/nginx -s reload'
+alias mongo_start='mongod --config /usr/local/etc/mongod.conf'
 
-alias sbld='sudo bluepill load config/bluepill/development.pill'
-alias sblt='sudo bluepill load config/bluepill/test.pill'
-alias sblj='sudo bluepill load config/bluepill/juggernaut.pill'
-alias sbl='sblj; sbld; sblt'
-alias sbsd='sudo bluepill ls_development status'
-alias sbst='sudo bluepill ls_test status'
-alias sbsj='sudo bluepill ls_juggernaut status'
-alias sbs='sbsj; sbsd; sbst'
-alias sbqd='sudo bluepill ls_development stop'
-alias sbqt='sudo bluepill ls_test stop'
-alias sbqj='sudo bluepill ls_juggernaut stop'
-alias sbq='sbqj; sbqd; sbqt'
-alias k9bpill='ps aux | grep bluepilld | grep -v grep | awk "{ print \$2 }" | xargs sudo kill -9'
 alias es_stop='killall elasticsearch'
 alias redis_stop='killall redis-server'
 
