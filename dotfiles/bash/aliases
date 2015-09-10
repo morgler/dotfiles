@@ -47,7 +47,7 @@ alias gfhf='git flow hotfix finish '
 alias sf='git checkout -b '
 alias ff=finish_feature
 
-alias mongo_start='mongod --config /usr/local/etc/mongod.conf'
+alias start_mongo='mongod --config /usr/local/etc/mongod.conf'
 
 alias es_stop='killall elasticsearch'
 alias redis_stop='killall redis-server'
