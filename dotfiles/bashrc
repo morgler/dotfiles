@@ -2,6 +2,7 @@
 . ~/bin/dotfiles/bash/config
 . ~/bin/dotfiles/bash/aliases
 . ~/bin/dotfiles/bash/git-flow-completion
+PATH=$PATH:$HOME/bin      # Add custom scripts
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 ### Added by the Heroku Toolbelt

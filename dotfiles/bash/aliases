@@ -1,7 +1,7 @@
 function finish_feature() {
   git checkout master
   git pull origin master
-  git merge --no-ff $1  
+  git merge --no-ff $1
   git commit
 }
 
@@ -25,12 +25,7 @@ alias feature='rake db:test:prepare && cucumber --drb '
 alias migrate='rake db:migrate && rake db:test:prepare'
 alias watch='watchr ./watchr-runner.rb'
 alias ..="cd .."
-alias ea="subl -w ~/bin/dotfiles/bash/aliases && source ~/.bashrc"
-alias livesein-old='cd ~/code/livesein'
-alias livesein='cd ~/code/livesein-ios/spikes/iphone'
-alias livesein-rails='cd ~/code/livesein-ng'
-alias livesein-ios='cd ~/code/livesein-ios/spikes/iphone'
-alias uin='cd ~/code/dreimannzelt/uin'
+alias ea="atom ~/bin/dotfiles/bash/aliases"
 alias rmorig="find . -name '*.orig' | xargs rm"
 alias rmcassettes="rm spec/fixtures/cassettes/*.yml; rm spec/fixtures/cassettes/**/*.yml; rm features/fixtures/cassettes/cucumber_tags/*.yml"
 alias be="bundle exec "
