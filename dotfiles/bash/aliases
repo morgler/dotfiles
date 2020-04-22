@@ -21,6 +21,7 @@ alias gub='git fetch origin master && git rebase origin/master'   # update branc
 alias gf='git flow '
 alias gll='git pull '
 alias gsh='git push '
+alias gprunebranches='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
 alias feature='rake db:test:prepare && cucumber --drb '
 alias migrate='rake db:migrate && rake db:test:prepare'
 alias watch='watchr ./watchr-runner.rb'

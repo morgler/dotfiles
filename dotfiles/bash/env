@@ -1,1 +1,5 @@
 export EDITOR="atom"
+export ANDROID_SDK_ROOT="$HOME/Library/Android/Sdk"
+export GRADLE_HOME="/Applications/Android Studio.app/Contents/gradle/gradle-4.10.1"
+PATH=$PATH:$ANDROID_SDK_ROOT/tools; PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+PATH=$PATH:$GRADLE_HOME/bin
