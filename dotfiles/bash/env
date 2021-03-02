@@ -1,5 +1,15 @@
-export EDITOR="atom"
+export EDITOR="code"
 export ANDROID_SDK_ROOT="$HOME/Library/Android/Sdk"
 export GRADLE_HOME="/Applications/Android Studio.app/Contents/gradle/gradle-4.10.1"
 PATH=$PATH:$ANDROID_SDK_ROOT/tools; PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 PATH=$PATH:$GRADLE_HOME/bin
+
+PATH=$PATH:$HOME/bin      # Add custom scripts
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+export PATH=./bin:$PATH
+
+### pip (python package manager)
+# export PATH=$PATH:$HOME/Library/Python/3.6/bin

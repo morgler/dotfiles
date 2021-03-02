@@ -2,12 +2,10 @@
 . ~/bin/dotfiles/bash/config
 . ~/bin/dotfiles/bash/aliases
 . ~/bin/dotfiles/bash/git-flow-completion
-PATH=$PATH:$HOME/bin      # Add custom scripts
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-export PATH=./bin:$PATH
+### rbenv
+eval "$(rbenv init -)"
 
-### pip (python package manager)
-export PATH=$PATH:$HOME/Library/Python/3.6/bin
+### node
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
